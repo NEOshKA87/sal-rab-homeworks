@@ -1,6 +1,7 @@
 function addInCartMessage(title, price) {
     let productName = title;
     let productPrice = price;
+    let message = productName;
 // First commit
     // Задание №1.1. Оповещение о добавлении в корзину
 
@@ -16,13 +17,14 @@ function addInCartMessage(title, price) {
 
     // Конец решения задания №1.1.
 
-    return message;
+    return (message + ' за ' + productPrice + ' теперь в корзине!');
 }
 
 function addInCartCountChange(value) {
 
     // Задание №1.2. Увеличение количества в корзине
     let oldValue = value;
+    let newValue = oldValue;
 
     // создайте переменную newValue
     // присвойте ей значение oldValue
@@ -30,12 +32,14 @@ function addInCartCountChange(value) {
 
     // Конец решения задания №1.2.
 
-    return newValue;
+    return newValue +1;
 }
 
 function addInCartSumChange(sum, delta) {
     let oldSum = sum;
     let difference = delta;
+    let newSum = (oldSum+difference);
+    let newSunewSumText = `${newSum} ₽`;
 
     // Задание №1.3. Увеличение суммы в корзине
 
@@ -47,4 +51,3 @@ function addInCartSumChange(sum, delta) {
 
     return newSumText;
 }
-
